@@ -13,6 +13,7 @@ All the tasks and workflows are mentioned in Hackathon branch. (Link: https://gi
 
 **Task Descriptions & Implementations:**
 
+## Initializing Git
 1. Fork the git repository from the shared repository: https://github.com/iemafzalhassan/online_shop
 2. Clone the Git Repository.
 
@@ -45,10 +46,81 @@ git branch
 ls
 ```
 
-5. Setting Up the Environment
+## Setting Up the Development Environment
+1. Checking System and Installing Dependencies
+```bash
+sudo apt update
+sudo apt install npm
+node -v
+npm -v
+```
+2. Initializing the Project
+```bash
+npm init -y
+npm install
+```
+3. Starting the Development Server for testing
+```bash
+npm run dev
+```
 
+## Implementation of Docker
 
+### Dockerfile
+1. create and edit the Dockerfile
+```bash
+vim Dockerfile
+```
+2. **Dockerfile code:**
+```bash
+# Base Image
 
+From node:18-alpine
+
+# Working directory for the app
+
+WORKDIR /app
+
+# Copy only the required code from host to container
+
+COPY . .
+
+# RUN the required commands
+
+RUN npm install
+
+# Expose the port
+
+EXPOSE 5173
+
+# To serve the app and keep it running
+
+CMD ["npm","run","dev"]
+```
+3. Building a Docker Image
+```bash
+docker build -t onlineapp:latest .
+docker images
+```
+4.Running the Docker Container
+```bash
+docker run -p 5173:5173 --name onlineapp onlineapp:latest
+```
+
+## Managing Docker Containers and Images
+
+1. Listing and Stopping Containers
+```bash
+docker ps
+docker ps -l
+docker stop f1dbfb957f00 (container_id)
+docker rm f1dbfb957f00 (container_id)
+```
+2. Removing Docker Images
+```bash
+docker rmi e2999b7661ce (image_id) - (To remove a single image at a time)
+docker rmi $(docker images -aq) - (To remove all images in one time)
+```
 
 
 

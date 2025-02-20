@@ -188,5 +188,18 @@ In this distroless image docker file,
   - Now, I have exposed the port which is defined in the code of the application (EXPOSE 5173)
   - Then, I need to define this path (node_modules/.bin/serve) as the app is not reading it automatically in distroless. The server command is used to run the app and the distroless image doesn't have npm.
 
-       
+3. Building the Distroless Image
+```bash
+docker build -f ./dockerfile-multi-stage -t onlineapp-mini:latest .
+```
+(-f represents docker file path and -t represents the tag)
+
+4. Running the Multi-Stage Container using distroless image
+```bash
+docker run -p 3000:5173 --name onlineapp-mini onlineapp-mini:latest
+docker run -d -p 3000:5173 --name onlineapp-mini onlineapp-mini:latest  (To run in detach mode)
+```
+
+## Using Docker Compose
+
 

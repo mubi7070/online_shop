@@ -328,6 +328,6 @@ git push origin final-solution-phase1
 This document provides a comprehensive guide and steps to setting up, running, and managing the online_shop project using Linux, Git, and Docker. By following these steps, you can successfully build and deploy the application while maintaining a clean and organized development environment.
 The video link is also attached in which i am explaining the flow and the code part.
 
-Video Link: 
+Video Link: https://drive.google.com/file/d/1tKAIIsrygYqsdLos6xPrhdUQqeFU4rXH/view?usp=sharing
 
 Happy Learning :)

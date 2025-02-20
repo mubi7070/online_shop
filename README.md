@@ -1,5 +1,6 @@
 # Online Shop 🛍️ – Hackathon Phase 1 Submission
 **Creator:** Mubashir Ahmed
+**Branch:** final-solution-phase1
 
 This document provides a step-by-step guide on setting up and running the online_shop project using Linux, Git, and Docker.
 

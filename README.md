@@ -200,6 +200,60 @@ docker run -p 3000:5173 --name onlineapp-mini onlineapp-mini:latest
 docker run -d -p 3000:5173 --name onlineapp-mini onlineapp-mini:latest  (To run in detach mode)
 ```
 
+## Creating and Managing Docker Networks and Volumes
+1. Creating Docker Volume
+```bash
+docker volume create onlineapp
+docker inspect onlineapp
+```
+2. Creating Docker Network
+```bash
+docker network create onlineapp-network
+docker inspect onlineapp-network
+```
+3. Updating Permissions for Docker Volume
+```bash
+sudo chmod 777 /var/lib/docker/volumes/onlineapp/_data
+```
+
 ## Using Docker Compose
 
+1. Creating and Editing docker-compose.yml
+```bash
+vim docker-compose.yml
+```
+2. **docker-compose.yml code:**
+```bash
+services:
+  onlineapp:
+    build:
+      context: .
+      dockerfile: dockerfile-multi-stage-new
+    container_name: onlineapp
+    networks:
+      - onlineapp-network
+    ports:
+      - "3000:5173"
 
+networks:
+  onlineapp-network:
+```
+
+**Note / Instructions:**
+In this docker compose file, 
+  - We have a single container (onlineapp)
+  - First, we have configured the directory and docker file name in the build for the build creation.
+  - then, we assigned the container name
+  - then, we have linked it with a user defined bridge network.
+  - Assign the external and internal ports as the app is accessible on port 3000 externally and the app is running on port 5173 as per it's configuration.
+  - We need to change the port as per the requirement in the task.
+
+3. Starting Services with Docker Compose
+```bash
+docker compose up
+docker compose up -d   (To run it in detach mode)
+```
+4. Stopping Services (It will remove also)
+```bash
+docker compose down
+```

@@ -1,0 +1,629 @@
+ 1230  mkdir -p Hackathon
+ 1231  ls
+ 1232  cd Hackathon/
+ 1233  git clone https://github.com/mubi7070/online_shop.git
+ 1234  ls
+ 1235  git init
+ 1236  clear
+ 1237  history
+ 1238  clear
+ 1239  ls
+ 1240  git branch
+ 1241  ls
+ 1242  cd online_shop/
+ 1243  ls
+ 1244  git init
+ 1245  git branch
+ 1246  git checkout -b dev
+ 1247  git branch
+ 1248  git push origin dev
+ 1249  git remote -v
+ 1250  git remote add origin https://--personal-access-token--@github.com/mubi7070/online_shop.git
+ 1251  git remote set-url origin https://--personal-access-token--@github.com/mubi7070/online_shop.git
+ 1252  git remote -v
+ 1253  git branch
+ 1254  git push origin dev
+ 1255  git branch
+ 1256  clear
+ 1257  ls
+ 1258  npm install
+ 1259  sudo apt install npm
+ 1260  npm -v
+ 1261  node -v
+ 1262  ls
+ 1263  npm run dev
+ 1264  ls -l
+ 1265  chmod 764 *
+ 1266  ls -l
+ 1267  npm run dev
+ 1268  npm init
+ 1269  npm run dev
+ 1270  node vite.config.js
+ 1271  npm install
+ 1272  npm run dev
+ 1273  lsof -i tcp:3000
+ 1274  npm run dev
+ 1275  clear
+ 1276  ls
+ 1277  node -v
+ 1278  ls
+ 1279  vim Dockerfile
+ 1280  ls
+ 1281  vim Dockerfile
+ 1282  ls
+ 1283  docker build -t onlineapp:latest
+ 1284  docker ps
+ 1285  docker images
+ 1286  docker rmi *
+ 1287  docker system prune
+ 1288  clear
+ 1289  docker images
+ 1290  docker rmi portfolio-app
+ 1291  docker images
+ 1292  clear
+ 1293  docker images -aq
+ 1294  docker rmi $(docker images -aq)
+ 1295  clear
+ 1296  docker images
+ 1297  clear
+ 1298  ls
+ 1299  docker build -t onlineapp:latest
+ 1300  docker images
+ 1301  docker images -l
+ 1302  clear
+ 1303  ls
+ 1304  vim Dockerfile
+ 1305  docker build -t onlineapp:latest
+ 1306  docker build -t onlineapp:latest .
+ 1307  docker images
+ 1308  docker run -p 5173:5173 --name onlineapp:latest
+ 1309  docker run -p 5173:5173 --name onlineapp:latest .
+ 1310  docker run -p 5173:5173 --name onlineapp:latest
+ 1311  docker run -p 5173:5173 onlineapp:latest
+ 1312  docker ps
+ 1313  docker ps -l
+ 1314  docker rm 289b2925ea44
+ 1315  docker ps -l
+ 1316  clear
+ 1317  ls
+ 1318  docker images
+ 1319  docker rmi $(docker ps -aq)
+ 1320  docker rmi $(docker images -aq)
+ 1321  docker images
+ 1322  clear
+ 1323  vim Dockerfile
+ 1324  docker build -t onlineapp:latest .
+ 1325  docker images
+ 1326  docker run -p 3000:5173 --name onlineapp:latest onlineapp:latest
+ 1327  docker run -p 3000:5173 --name onlineapp onlineapp:latest
+ 1328  clear
+ 1329  cd Hackathon/
+ 1330  ls
+ 1331  cd online_shop/
+ 1332  ls
+ 1333  docker images
+ 1334  docker run -d -p 3000:5173 --name onlineapp onlineapp:latest
+ 1335  docker ps
+ 1336  docker stop f59
+ 1337  docker rmi f59
+ 1338  docker rmi f59ed3962529
+ 1339  docker ps
+ 1340  docker ps -l
+ 1341  docker rm f59ed
+ 1342  clear
+ 1343  docker ps
+ 1344  docker run -d -p 3000:5173 --name onlineapp onlineapp:latest
+ 1345  sudo apt clean
+ 1346  docker ps
+ 1347  docker stop ad6
+ 1348  docker ps
+ 1349  docker ps -l
+ 1350  docker em ad6c
+ 1351  docker rm ad6c
+ 1352  docker images
+ 1353  docker rmi $(docker images -aq)
+ 1354  docker images -l
+ 1355  docker images -a
+ 1356  docker images -aq
+ 1357  clear
+ 1358  ls
+ 1359  vim Dockerfile
+ 1360  clear
+ 1361  docker build -t onlineapp:latest
+ 1362  docker build -t onlineapp:latest .
+ 1363  docker images
+ 1364  docker system prune
+ 1365  docker images
+ 1366  docker rm node
+ 1367  docker rmi node
+ 1368  docker images
+ 1369  docker rmi *
+ 1370  docker ps
+ 1371  docker ps -aq
+ 1372  docker images -aq
+ 1373  docker rmi $(docker images -aq)
+ 1374  docker images
+ 1375  clear
+ 1376  vim Dockerfile
+ 1377  clear
+ 1378  ls
+ 1379  cd Hackathon/
+ 1380  cd online_shop/
+ 1381  ls
+ 1382  vim Dockerfile
+ 1383  docker images
+ 1384  docker images -aq
+ 1385  docker ps -aq
+ 1386  clear
+ 1387  docker build -t onlineapp:latest
+ 1388  clear
+ 1389  docker build -t onlineapp:latest .
+ 1390  docker images
+ 1391  docker run -d -p 80:5173 --name onlineapp onlineapp:latest
+ 1392  docker ps
+ 1393  docker ps -a
+ 1394  docker rm 3aa4
+ 1395  docker ps -a
+ 1396  docker run -d -p 3000:5173 --name onlineapp onlineapp:latest
+ 1397  docker exec -it d5f bash
+ 1398  docker ps
+ 1399  docker stop d5f8 && docker rm d5f8
+ 1400  docker rmi $(docker images -aq)
+ 1401  docker images -aq
+ 1402  docker ps -aq
+ 1403  clear
+ 1404  vim Dockerfile
+ 1405  clear
+ 1406  docker build -t onlineapp:latest .
+ 1407  docker run -p 3000:5173 --name onlineapp onlineapp:latest
+ 1408  clear
+ 1409  docker ps
+ 1410  docker stop 3c3 && docker rm 3c3
+ 1411  docker ps -aq
+ 1412  docker images -aq
+ 1413  docker rmi $(docker images -aq)
+ 1414  docker images -aq
+ 1415  clear
+ 1416  cd Hackathon/
+ 1417  cd online_shop/
+ 1418  ls
+ 1419  vim Dockerfile
+ 1420  cat Dockerfile
+ 1421  clear
+ 1422  docker build -t onlineapp:latest .
+ 1423  docker images
+ 1424  clear
+ 1425  docker rmi $(docker images -aq)
+ 1426  clear
+ 1427  docker images
+ 1428  vim Dockerfile
+ 1429  docker build -t onlineapp:latest .
+ 1430  docker image
+ 1431  docker images
+ 1432  docker run -p 3000:5173 --name onlineapp onlineapp:latest
+ 1433  docker ps
+ 1434  docker rm $(docker ps -aq)
+ 1435  docker run -d -p 3000:5173 --name onlineapp onlineapp:latest
+ 1436  docker exec -t 792 bash
+ 1437  docker exec -it 792 bash
+ 1438  clear
+ 1439  docker ps
+ 1440  docker exec -it 792b21 bash
+ 1441  docker stop 792b && docker rm 792b
+ 1442  docker run -p 3000:5173 onlineapp:latest
+ 1443  clear
+ 1444  vim Dockerfile
+ 1445  clear
+ 1446  ls
+ 1447  vim Dockerfile
+ 1448  npm run build && npm start
+ 1449  npm run dev
+ 1450  clear
+ 1451  ls
+ 1452  docker ps
+ 1453  docker ps -aq
+ 1454  docker ps -a
+ 1455  docker start 2696
+ 1456  docker ps
+ 1457  docker stop 2696
+ 1458  clear
+ 1459  vim dockerfile-multi-stage
+ 1460  ls
+ 1461  vim dockerfile-multi-stage
+ 1462  vim Dockerfile
+ 1463  vim dockerfile-multi-stage
+ 1464  ls
+ 1465  vim dockerfile-multi-stage
+ 1466  docker ps
+ 1467  docker ps -aq
+ 1468  docker rm $(docker ps -aq)
+ 1469  docker rmi $(docker images -aq)
+ 1470  docker images
+ 1471  docker images -aq
+ 1472  clear
+ 1473  docker build -f ./dockerfile-multi-stage -t onlineapp-mini:latest .
+ 1474  docker images -aq
+ 1475  docker rmi $(docker images -aq)
+ 1476  clear
+ 1477  vim dockerfile-multi-stage
+ 1478  ls
+ 1479  docker build -t onlineapp:latest
+ 1480  docker build -t onlineapp:latest .
+ 1481  docker run -d -p 3000:5173 --name onlineapp onlineapp:latest
+ 1482  docker ps
+ 1483  docker exec -it 0c69755443a7 bash
+ 1484  vim Dockerfile
+ 1485  docker exec -it onlineapp sh
+ 1486  clear
+ 1487  docker ps
+ 1488  docker stop 0c69 && docker rm 0c69
+ 1489  clear
+ 1490  vim dockerfile-multi-stage
+ 1491  docker images
+ 1492  docker rmi $(docker images -aq)
+ 1493  clear
+ 1494  docker images -aq
+ 1495  sudo docker rmi $(docker images -aq)
+ 1496  docker system prune
+ 1497  clear
+ 1498  docker ps -aq
+ 1499  docker images -aq
+ 1500  docker rmi cf46b336f659
+ 1501  docker images -aq
+ 1502  clear
+ 1503  ls
+ 1504  docker build -f ./dockerfile-multi-stage onlineapp-mini
+ 1505  docker build -f ./dockerfile-multi-stage onlineapp-mini .
+ 1506  clear
+ 1507  docker images -aq
+ 1508  docker build -f ./dockerfile-multi-stage onlineapp-mini:latest .
+ 1509  docker build -f ./dockerfile-multi-stage -t onlineapp-mini:latest .
+ 1510  docker images
+ 1511  docker run -p 3000:5173 --name onlineapp-mini onlineapp-mini:latest
+ 1512  clear
+ 1513  vim dockerfile-multi-stage
+ 1514  docker images -aq
+ 1515  docker system prune
+ 1516  clear
+ 1517  docker images -aq
+ 1518  docker rmi e9900147334c
+ 1519  docker delete c687babb8a42
+ 1520  docker rmi c687babb8a42
+ 1521  docker images -aq
+ 1522  cls
+ 1523  clear
+ 1524  docker images -aq
+ 1525  docker rmi f6c173a701e1
+ 1526  clear
+ 1527  docker images -aq
+ 1528  docker ps -aq
+ 1529  cd Hackathon/
+ 1530  cd online_shop/
+ 1531  docker ps
+ 1532  docker images
+ 1533  clear
+ 1534  ls
+ 1535  docker build -f ./dockerfile-multi-stage -t online_app_mini:latest .
+ 1536  docker images
+ 1537  docker run -p 3000:5173 --name onlineapp-mini online_app_mini:latest
+ 1538  docker ps
+ 1539  docker ps -l
+ 1540  docker rm 525e
+ 1541  docker ps -l
+ 1542  docker images
+ 1543  docker rmi online_app_mini:latest
+ 1544  docker rmi node
+ 1545  docker rmi node:18-alpine
+ 1546  docker images
+ 1547  docker rmi $(docker images -aq)
+ 1548  docker images
+ 1549  clear
+ 1550  vim dockerfile-multi-stage
+ 1551  docker build -f ./dockerfile-multi-stage -t online_app_mini:latest .
+ 1552  docker images
+ 1553  docker run -p 3000:5173 --name onlineapp-mini online_app_mini:latest
+ 1554  clear
+ 1555  docker ps
+ 1556  docker ps -aq
+ 1557  docker rm 241
+ 1558  docker ps -aq
+ 1559  docker rmi $(docker images -aq)
+ 1560  docker images -aq
+ 1561  docker images -a
+ 1562  clear
+ 1563  vim dockerfile-multi-stage
+ 1564  docker build -f ./dockerfile-multi-stage -t online_app_mini:latest .
+ 1565  ls
+ 1566  vim dockerfile-multi-stage-new
+ 1567  clear
+ 1568  docker build -f ./dockerfile-multi-stage-new -t online_app_mini_new:latest .
+ 1569  docker run -p 3000:5173 --name onlineapp-mini-new online_app_mini_new:latest
+ 1570  vim dockerfile-multi-stage-new
+ 1571  docker build -f ./dockerfile-multi-stage-new -t online_app_mini_test:latest .
+ 1572  docker run -p 3000:5173 --name onlineapp-mini-test online_app_mini_test:latest
+ 1573  vim dockerfile-multi-stage-new
+ 1574  ls
+ 1575  cd ..
+ 1576  ls
+ 1577  cd online_shop/
+ 1578  cd ..
+ 1579  ls
+ 1580  pwd
+ 1581  cp -r /home/ubuntu/Hackathon/online_shop /home/ubuntu/Hackathon/backups
+ 1582  ls
+ 1583  cd backups/
+ 1584  ls
+ 1585  cd ..
+ 1586  ls
+ 1587  cd online_shop/
+ 1588  git pull origin dev
+ 1589  git push origin dev
+ 1590  git status
+ 1591  git add *
+ 1592  git status
+ 1593  git commit -m "Dockerfile created successfully"
+ 1594  git status
+ 1595  git push origin dev
+ 1596  git pull origin dev
+ 1597  git branch
+ 1598  cd ..
+ 1599  ls
+ 1600  cd HackathonFiles
+ 1601  mkdir HackathonFiles
+ 1602  cd HackathonFiles/
+ 1603  git clone https://github.com/mubi7070/online_shop.git
+ 1604  git remote -v
+ 1605  ls
+ 1606  git online_shop/
+ 1607  cd online_shop/
+ 1608  ls
+ 1609  git remote -v
+ 1610  git remote set-url origin https://--personal-access-token--@github.com/mubi7070/online_shop.git
+ 1611  git pull origin master
+ 1612  git pull origin dev
+ 1613  git branch
+ 1614  cd ..
+ 1615  ls
+ 1616  git clone -b dev https://github.com/mubi7070/online_shop.git
+ 1617  rm -r online_shop/
+ 1618  ls
+ 1619  rm -r *
+ 1620  y
+ 1621  ls
+ 1622  clear
+ 1623  git clone -b dev https://github.com/mubi7070/online_shop.git
+ 1624  ls
+ 1625  cd online_shop/
+ 1626  ls
+ 1627  git branch
+ 1628  git init
+ 1629  git remote -v
+ 1630  git remote set-url origin https://--personal-access-token--@github.com/mubi7070/online_shop.git
+ 1631  git push origin dev
+ 1632  git pull origin dev
+ 1633  ls
+ 1634  cd ..
+ 1635  ls
+ 1636  cd ..
+ 1637  ls
+ 1638  cd online_shop/
+ 1639  ls
+ 1640  vim Dockerfile
+ 1641  vim dockerfile-multi-stage
+ 1642  vim dockerfile-multi-stage-new
+ 1643  cd ..
+ 1644  ls
+ 1645  cd HackathonFiles/
+ 1646  ls
+ 1647  cd online_shop/
+ 1648  vim Dockerfile
+ 1649  vim dockerfile-multi-stage
+ 1650  clear
+ 1651  vim dockerfile-multi-stage-new
+ 1652  clear
+ 1653  docker images
+ 1654  docker system prune
+ 1655  docker ps -aq
+ 1656  docker images -aq
+ 1657  docker rmi $(docker images -aq)
+ 1658  docker images -aq
+ 1659  clear
+ 1660  docker build -t onlineapp-mini:latest
+ 1661  docker build -t onlineapp-mini:latest .
+ 1662  docker images
+ 1663  docker run -p 3000:5173 --name onlineapp_mini onlineapp-mini:latest
+ 1664  clear
+ 1665  ls
+ 1666  git status
+ 1667  git add *
+ 1668  git status
+ 1669  git commit -m "Dockerfile and Distroless Image Created Successfully"
+ 1670  git push origin dev
+ 1671  git pull origin main
+ 1672  git pull origin dev
+ 1673  clear
+ 1674  ls
+ 1675  vim dockerfile-multi-stage-new
+ 1676  docker system prune
+ 1677  docker ps -aq
+ 1678  docker images -aq
+ 1679  docker rm $(docker images -aq)
+ 1680  clear
+ 1681  docker images -aq
+ 1682  docker rmi $(docker images -aq)
+ 1683  docker images -aq
+ 1684  clear
+ 1685  docker build -t online-app-mini:latest .
+ 1686  docker run -p 3000:5173 --name online-app-mini online-app-mini:latest
+ 1687  clear
+ 1688  docker system prune
+ 1689  docker ps -aq
+ 1690  docker rmi $(docker images -aq)
+ 1691  docker images -aq
+ 1692  clear
+ 1693  vim dockerfile-multi-stage-new
+ 1694  git status
+ 1695  vim dockerfile-multi-stage-new
+ 1696  clear
+ 1697  docker build -f ./dockerfile-multi-stage-new -t online-app-mini:latest .
+ 1698  docker images
+ 1699  docker run -p 3000:5173 --name online-app-mini online-app-mini:latest
+ 1700  clear
+ 1701  docker rmi $(docker images -aq)
+ 1702  docker images -aq
+ 1703  docker rmi $(docker images -aq)
+ 1704  docker system prune
+ 1705  docker ps -aq
+ 1706  docker rmi $(docker images -aq)
+ 1707  docker images -aq
+ 1708  clear
+ 1709  vim dockerfile-multi-stage-new
+ 1710  clear
+ 1711  docker build -f ./dockerfile-multi-stage-new -t online-app-mini:latest .
+ 1712  docker run -p 3000:5173 --name online-app-mini online-app-mini:latest
+ 1713  ls
+ 1714  cat package.json
+ 1715  ls
+ 1716  docker images
+ 1717  docker system prune
+ 1718  docker rmi $(docker images -aq)
+ 1719  docker images -aq
+ 1720  docker ps -aq
+ 1721  clear
+ 1722  vim Dockerfile
+ 1723  vim dockerfile-multi-stage-new
+ 1724  clear
+ 1725  vim Dockerfile
+ 1726  docker run -t onlineapp:latest .
+ 1727  docker build -t onlineapp:latest .
+ 1728  docker run -p 3000:5173 --name onlineapp onlineapp:latest
+ 1729  vim Dockerfile
+ 1730  docker system prune
+ 1731  docker rmi $(docker images -aq)
+ 1732  docker ps -aq
+ 1733  docker images -aq
+ 1734  clear
+ 1735  ls
+ 1736  vim dockerfile-multi-stage-new
+ 1737  clear
+ 1738  docker images -aq
+ 1739  clear
+ 1740  docker ps
+ 1741  clear
+ 1742  docker build -f ./dockerfile-multi-stage-new -t onlineapp-new:latest
+ 1743  docker build -f ./dockerfile-multi-stage-new -t onlineapp-new:latest .
+ 1744  docker run -p 3000:5173 --name onlineapp-new onlineapp-new:latest
+ 1745  clear
+ 1746  vim dockerfile-multi-stage-new
+ 1747  ls
+ 1748  vim dockerfile-multi-stage-new
+ 1749  rm -r dockerfile-multi-stage
+ 1750  ls
+ 1751  git status
+ 1752  git rm dockerfile-multi-stage
+ 1753  git status
+ 1754  git add *
+ 1755  git commit -m "The Distroless Image is running fine now"
+ 1756  git push origin dev
+ 1757  git pull origin dev
+ 1758  clear
+ 1759  docker volume ls
+ 1760  docker volume create onlineapp
+ 1761  docker inspect onlineapp
+ 1762  docker network ls
+ 1763  docker network create onlineapp-network
+ 1764  docker inspect onlineapp-network
+ 1765  ls
+ 1766  vim docker-compose.yml
+ 1767  docker network list
+ 1768  vim docker-compose.yml
+ 1769  clear
+ 1770  sudo chmod 777 /var/lib/docker/volumes/onlineapp/_data
+ 1771  docker images
+ 1772  ls
+ 1773  vim dockerfile-multi-stage-new
+ 1774  docker images
+ 1775  vim docker-compose.yml
+ 1776  docker images
+ 1777  vim docker-compose.yml
+ 1778  docker compose up
+ 1779  sudo apt-get install docker-compose-v2
+ 1780  clear
+ 1781  docker compose up
+ 1782  wq
+ 1783  vim docker-compose.yml
+ 1784  clear
+ 1785  docker compose down
+ 1786  docker compose up
+ 1787  docker compose down
+ 1788  clear
+ 1789  docker images
+ 1790  docker system prune
+ 1791  docker ps
+ 1792  docker ps -aq
+ 1793  docker images -aq
+ 1794  docker rmi $(docker images -aq)
+ 1795  clear
+ 1796  docker images -aq
+ 1797  clear
+ 1798  ls
+ 1799  docker build -t online-app:latest
+ 1800  docker build -f ./dockerfile-multi-stage-new -t online-app:latest .
+ 1801  docker run -p 3000:5173 --name online-app online-app:latest
+ 1802  clear
+ 1803  docker images
+ 1804  vim docker-compose.yml
+ 1805  docker compose up
+ 1806  vim docker-compose.yml
+ 1807  docker compose up
+ 1808  clear
+ 1809  docker compose down
+ 1810  docker login
+ 1811  docker images
+ 1812  docker image tag online-app:latest mubashirahmed324
+ 1813  docker image tag online-app:latest mubashirahmed324/online-app:latest
+ 1814  docker images
+ 1815  docker rmi mubashirahmed324
+ 1816  docker images
+ 1817  docker push mubashirahmed324/online-app:latest
+ 1818  clear
+ 1819  vim docker-compose.yml
+ 1820  ls
+ 1821  vim docker-compose.yml
+ 1822  clear
+ 1823  docker compose up
+ 1824  docker ps -aq
+ 1825  docker images
+ 1826  docker compose up
+ 1827  docker compose down
+ 1828  docker images
+ 1829  clear
+ 1830  git status
+ 1831  git add *
+ 1832  git commit -m "docker-compose.yml created successfully."
+ 1833  git push origin dev
+ 1834  git pull origin dev
+ 1835  git checkout -b final-solution-phase1
+ 1836  git branch
+ 1837  ls
+ 1838  git status
+ 1839  git push origin final-solution-phase1
+ 1840  git branch
+ 1841  ls
+ 1842  mv README.md README-old.md
+ 1843  ls
+ 1844  git status
+ 1845  git rm README.md
+ 1846  git add README-old.md
+ 1847  git status
+ 1848  git commit -m "Updating the README.md File for the submission"
+ 1849  git branch
+ 1850  git push origin "final-solution-phase1"
+ 1851  git pull origin "final-solution-phase1"
+ 1852  touch README.md
+ 1853  git add README.md
+ 1854  git commit -m "Adding New README.md file"
+ 1855  git push origin "final-solution-phase1"
+ 1856  git pull origin "final-solution-phase1"
+ 1857  clear
+ 1858  history

@@ -1,0 +1,13 @@
+services:
+  onlineapp:
+    build:
+      context: .
+      dockerfile: dockerfile-multi-stage-new 
+    container_name: onlineapp
+    networks:
+      - onlineapp-network
+    ports:
+      - "3000:5173"
+
+networks:
+  onlineapp-network:

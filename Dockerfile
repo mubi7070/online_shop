@@ -8,9 +8,7 @@ WORKDIR /app
 
 # Copy only the required code from host to container
 
-COPY src/ /app/src/
-COPY public/ /app/public/
-COPY index.css package.json eslint.config.js index.html package-lock.json vite.config.js /app/
+COPY . .
 
 # RUN the required commands
 

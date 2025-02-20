@@ -1,33 +1,35 @@
-
-#stage 1
+#Stage 1
+#Base Image
 FROM node:18-alpine AS builder
 
+# Here is Work directory
 WORKDIR /app
 
-# Copy necessary files
-COPY package.json /app
+# Copy and install dependencies from package.json and package-lock.json
+COPY package.json package-lock.json ./
 
-# Install dependencies and build the app
+# Installation here
 RUN npm install
-#RUN npm install -g serve
 
+#Copy the stuff and run the build
 COPY . .
-
 RUN npm run build
 
-# Stage 2
-FROM node:18-alpine
+#Stage 2
+# Distroless Image
+FROM gcr.io/distroless/nodejs:18
 
+#work directory
 WORKDIR /app
 
-# Copy only the built `dist/` folder and serve
+# Copy required files from builder (Stage 1)
 COPY --from=builder /app/dist ./dist
-#COPY --from=builder /usr/local/bin/serve /usr/local/bin/serve
-
 COPY --from=builder /app/node_modules ./node_modules
 
-# Expose the port
+# Expose port
 EXPOSE 5173
 
-# Correct CMD to serve the production build
-CMD ["serve", "-s", "dist", "-l", "5173"]
+# Run
+# Need to define this path (node_modules/.bin/serve) as the app is not reading it automatically in distroless.
+CMD [ "node_modules/.bin/serve", "-s", "dist", "-l", "5173" ]
+

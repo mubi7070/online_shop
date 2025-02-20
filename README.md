@@ -135,8 +135,59 @@ vim dockerfile-multi-stage-new
 ```
 2. **dockerfile-multi-stage-new code:**
 ```bash
+#Stage 1
+#Base Image
+FROM node:18-alpine AS builder
 
+# Here is Work directory
+WORKDIR /app
+
+# Copy and install dependencies from package.json and package-lock.json
+COPY package.json package-lock.json ./
+
+# Installation here
+RUN npm install
+
+#Copy the stuff and run the build
+COPY . .
+RUN npm run build
+
+#Stage 2
+# Distroless Image
+FROM gcr.io/distroless/nodejs:18
+
+#work directory
+WORKDIR /app
+
+# Copy required files from builder (Stage 1)
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/node_modules ./node_modules
+
+# Expose port
+EXPOSE 5173
+
+# Run
+# Need to define this path (node_modules/.bin/serve) as the app is not reading it automatically in distroless.
+CMD [ "node_modules/.bin/serve", "-s", "dist", "-l", "5173" ]
 ```
+
+**Note / Instructions:**
+In this distroless image docker file, 
+       - I took the base image of node (node:18-alpine) and give an alias to it (builder)
+       - I have set the working directory
+       - I have copied the files "package.json" and "package-lock.json" first as these files contains all the dependencies which are required to run this application.
+       - Then, I run "RUN npm install" which means now it will install all the dependencies mentioned in the above files.
+       - Then, I copied (COPY . .) all the files and directories from local to the container.
+       - Then, I have initialized the build creation using the command. (RUN npm run build)
+       - Here the 1st stage is ended.
+       - In the 2nd Phase, I took the distroless image of node (FROM gcr.io/distroless/nodejs:18)
+       - I have set the working directory for this stage also.
+       - Then, I have copied only the required directories from stage 1 to stage 2 to reduce the image size and maintain security. 
+       - COPY --from=builder /app/dist ./dist (The app creates the static files in the dist directories so that's why i have copied this)
+       - COPY --from=builder /app/node_modules ./node_modules (The node_modules are required as all the dependencies are stored in it)
+       - Now, I have exposed the port which is defined in the code of the application (EXPOSE 5173)
+       - Then, I need to define this path (node_modules/.bin/serve) as the app is not reading it automatically in distroless. The server command is used to run the app and the distroless image doesn't have npm.
+
 
        
 

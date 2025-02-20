@@ -6,7 +6,20 @@
 This document provides a step-by-step guide on setting up and running the online_shop project using Linux, Git, and Docker.
 
 ## Table of Contents
-
+- [Tasks](#tasks)
+- [Initializing Git](#initializing-git)
+- [Setting Up the Development Environment](#setting-up-the-development-environment)
+- [Implementation of Docker](#implementation-of-docker)
+  - [Dockerfile](#dockerfile)
+  - [Building a Docker Image](#building-a-docker-image)
+  - [Running the Docker Container](#running-the-docker-container)
+- [Managing Docker Containers and Images](#managing-docker-containers-and-images)
+- [Working with Multi-Stage Builds (Distroless Images)](#working-with-multi-stage-builds-distroless-images)
+- [Creating and Managing Docker Networks and Volumes](#creating-and-managing-docker-networks-and-volumes)
+- [Using Docker Compose](#using-docker-compose)
+- [Pushing Docker Image to Docker Hub](#pushing-docker-image-to-docker-hub)
+- [Managing Git Repository And Finalizing the project](#managing-git-repository-and-finalizing-the-project)
+- [Conclusion](#conclusion)
 
 ---
 

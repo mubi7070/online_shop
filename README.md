@@ -248,6 +248,7 @@ In this docker compose file,
   - Assign the external and internal ports as the app is accessible on port 3000 externally and the app is running on port 5173 as per it's configuration.
   - We need to change the port as per the requirement in the task.
 
+
 3. Starting Services with Docker Compose
 ```bash
 docker compose up
@@ -257,3 +258,55 @@ docker compose up -d   (To run it in detach mode)
 ```bash
 docker compose down
 ```
+
+## Pushing Docker Image to Docker Hub
+1. Logging into Docker Hub
+```bash
+docker login
+```
+2. Tagging and Pushing Image
+```bash
+docker image tag online-app:latest mubashirahmed324/online-app:latest
+docker push mubashirahmed324/online-app:latest
+```
+3. Verification
+```bash
+Go to your docker hub account and in repositories, you will see this image.
+```
+
+## Managing Git Repository And Finalizing the project
+1. Checking Git Branch
+```bash
+git branch
+```
+2. Committing and Pushing Changes
+```bash
+git status
+git add *
+git commit -m "Dockerfile created successfully"
+git push origin dev
+```
+(Not included all the commits here.)
+
+3. Creating a New Branch for Final Submission
+```bash
+git checkout -b final-solution-phase1
+git status
+git push origin final-solution-phase1
+```
+4. Updating README File
+```bash
+mv README.md README-old.md   (Rename the old README.md file)
+git rm README.md
+git add README-old.md
+git commit -m "Updating the README.md File for submission"
+git push origin final-solution-phase1
+touch README.md
+git add README.md
+git commit -m "Adding New README.md file"
+git push origin final-solution-phase1
+```
+
+## Conclusion
+
+

@@ -1,0 +1,28 @@
+
+# Stage 1
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+# Copy necessary files
+COPY src/ /app/src/
+COPY public/ /app/public/
+COPY index.css package.json eslint.config.js index.html package-lock.json vite.config.js /app/
+
+# Install dependencies and build the app
+RUN npm install
+RUN npm run build
+
+# Stage 2
+FROM node:18-alpine
+
+WORKDIR /app
+
+#Copy only the built `dist/` folder and serve
+COPY --from=builder /app /app
+
+# Expose the port
+EXPOSE 5173
+
+# Correct CMD to serve the production build
+CMD ["npm","run","dev"]

@@ -1,0 +1,33 @@
+
+#stage 1
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+# Copy necessary files
+COPY package.json /app
+
+# Install dependencies and build the app
+RUN npm install
+#RUN npm install -g serve
+
+COPY . .
+
+RUN npm run build
+
+# Stage 2
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy only the built `dist/` folder and serve
+COPY --from=builder /app/dist ./dist
+#COPY --from=builder /usr/local/bin/serve /usr/local/bin/serve
+
+COPY --from=builder /app/node_modules ./node_modules
+
+# Expose the port
+EXPOSE 5173
+
+# Correct CMD to serve the production build
+CMD ["serve", "-s", "dist", "-l", "5173"]

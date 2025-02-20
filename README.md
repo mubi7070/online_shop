@@ -102,7 +102,7 @@ CMD ["npm","run","dev"]
 docker build -t onlineapp:latest .
 docker images
 ```
-4.Running the Docker Container
+4. Running the Docker Container
 ```bash
 docker run -p 5173:5173 --name onlineapp onlineapp:latest
 ```
@@ -115,14 +115,28 @@ docker ps
 docker ps -l
 docker stop f1dbfb957f00 (container_id)
 docker rm f1dbfb957f00 (container_id)
+
+docker stop d5f8 && docker rm d5f8  (To stop & remove in a single command)
 ```
 2. Removing Docker Images
 ```bash
 docker rmi e2999b7661ce (image_id) - (To remove a single image at a time)
 docker rmi $(docker images -aq) - (To remove all images in one time)
 ```
+3. Pruning Docker System (Remove all)
+```bash
+docker system prune
+```
 
+## Working with Multi-Stage Builds (Distroless Images)
+1. Creating a Multi-Stage Docker Build / Distroless Images
+```bash
+vim dockerfile-multi-stage-new
+```
+2. **dockerfile-multi-stage-new code:**
+```bash
 
+```
 
        
 

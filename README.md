@@ -30,6 +30,16 @@ All the tasks and workflows are mentioned in Hackathon branch. (Link: https://gi
 
 **Task Descriptions & Implementations:**
 
+## Key Changes & Enhancements
+1. As i have to create docker distroless image so i have to add a dependency in package.json (serve).
+```bash
+"react-tooltip": "^5.28.0",
+"serve": "^14.2.0"
+```
+Like this in package.json.
+
+2. So this serve package will also be downloaded and i don't have to install it explicitily in my container.
+
 ## Initializing Git
 1. Fork the git repository from the shared repository: https://github.com/iemafzalhassan/online_shop
 2. Clone the Git Repository.

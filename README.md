@@ -7,6 +7,7 @@ This document provides a step-by-step guide on setting up and running the online
 
 ## Table of Contents
 - [Tasks](#tasks)
+- [Key Changes And Enhancements](#key-changes-and-enhancements)
 - [Initializing Git](#initializing-git)
 - [Setting Up the Development Environment](#setting-up-the-development-environment)
 - [Implementation of Docker](#implementation-of-docker)
@@ -30,7 +31,7 @@ All the tasks and workflows are mentioned in Hackathon branch. (Link: https://gi
 
 **Task Descriptions & Implementations:**
 
-## Key Changes & Enhancements
+## Key Changes And Enhancements
 1. As i have to create docker distroless image so i have to add a dependency in package.json (serve).
 ```bash
 "react-tooltip": "^5.28.0",

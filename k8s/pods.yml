@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: onlineshop-pod
+  namespace: onlineshop-ns
+spec:
+  containers:
+    - name: onlineshop
+      image: mubashirahmed324/online-shop
+      ports:
+        - containerPort: 5173
